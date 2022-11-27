@@ -13,29 +13,44 @@ El objetivo del proyecto es determinar qué tipo de estrella se está estudiando
 
 ## Scope
 * What data science solutions are we trying to build?
+
+El problema a solucionar requiere construir un modelo de clasificación, ya que existen un número finito de clases o etiquetas a predecir.
+
 * What will we do?
+
+Con una debida exploración y procesamiento de los datos dispuestos se escogerá la mejor opción que retorne los mejores resultados según las métricas evaluadas, entre los modelos de aprendizaje automático clásicos y los que usan redes neuronales artificiales.
+
 * How is it going to be consumed by the customer?
+
+A pesar de que quien solicita el modelo no es del área del mercado, es decir, no se trata de mejorar ventas o atraer clientes para una empresa, el modelo pretende ser usado para mejorar la detección y clasificación de estrellas. De esta manera, la herramienta de machine learning le permite al investigador ahorrar grandes tiempos descubriendo el tipo de estrella observado, para así dedicarlo en otras preguntas para su proyecto de investigación.
 
 ## Personnel
 * Who are on this project:
-	* Microsoft:
-		* Project lead
-		* PM
-		* Data scientist(s)
-		* Account manager
+	* Creador del modelo:
+		* Carlos Esteban Gutierrez Guarnizo
 	* Client:
-		* Data administrator
-		* Business contact
+		* Juan Sebastián Lara Ramírez
+		* Juan Sebastián Malagón Torres
+		* Comunidad científica
 	
 ## Metrics
 * What are the qualitative objectives? (e.g. reduce user churn)
+	* Construir un modelo de decisión que prediga el tipo de estrella estudiada a partir de sus propiedades observacionales.
+	* Verificar que las estrellas siguen una gráfica determinada basado en su tamaño, temperatura y otras características, a saber, el diagrama de Hertzsprung-Russell.
 * What is a quantifiable metric  (e.g. reduce the fraction of users with 4-week inactivity)
+
+	* Reducir el tiempo que los investigadores tardan realizando tareas de clasificación de estrellas u objetos astrofísicos de características similares de manera inmediata.
+
 * Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%) 
+Lograr alrededor de un 90% de capacidad de predicción para cada uno de los tipos de estrellas.
 * What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
+No existen valores de referencia actuales, las etiquetas de los datos dispuestos han sido impuestas por personas y se asumen como correctas. Por otro lado, el tiempo que se tarda en clasificar una persona un conjunto de datos observacionales puede ser de varias horas, incluso días, pero un modelo de aprendizaje automático podría hacerlo en pocos minutos.
 * How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)
+Debido a que no se dispone de valores de referencia anteriores, se usará la métrica de accuracy para determinar el porcentaje de aciertos en las clasificaciones de las estrellas, y queda a juicio del investigador si lo considera como una buena herramienta para su uso académico.
 
 ## Plan
 * Phases (milestones), timeline, short description of what we'll do in each phase.
+
 
 ## Architecture
 * Data
