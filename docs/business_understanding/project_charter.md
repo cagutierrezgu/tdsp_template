@@ -3,7 +3,13 @@
 ## Business background
 
 * Who is the client, what business domain the client is in.
+
+Juan Sebastián Lara Ramírez, Magíster en ingeniería de sistemas y computación de la Universidad Nacional de Colombia y Juan Sebastián Malagón Torres, egresado del programa de bioingeniería de la universidad el bosque.
+Así mismo, cualquier profesor, investigador o estudiante que desde la academia desee realizar clasificación de estrellas basado en mediciones observacionales de sus características.
+
 * What business problems are we trying to address?
+
+El objetivo del proyecto es determinar qué tipo de estrella se está estudiando a partir de las características más importantes de esta, así como encontrar posibles relaciones ocultas entre dichas características que aporten nuevos conocimientos en la astrofísica estelar.
 
 ## Scope
 * What data science solutions are we trying to build?
