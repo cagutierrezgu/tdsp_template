@@ -12,9 +12,16 @@ _**For ease of modifying this report, placeholder links are included in this pag
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-| Stars.csv | Brief description of its orignal location | Brief description of its destination location | No fue usado el cliente de Kaggle, ya que el dataset es del orden de KB. | [Dataset 1 Report](docs/data/data_dictionary.md)|
+| Stars.csv | Los datos se descargan de la página web [Kaggle](https://www.kaggle.com/datasets/deepu1109/star-dataset) en la ruta "/c/Users/hurom/Jupyter/MLDS/MLDS6" | Se trabajará en Google Colab, así que se sube el conjunto de datos original de Drive bajo la ruta "/content/drive/MyDrive/Project/Data/stars.csv" | No fue usado el cliente de Kaggle, ya que el dataset es del orden de KB. | [Dataset 1 Report](docs/data/data_dictionary.md)|
 
-* Stars.csv summary. 
+* Stars.csv summary. Este es un conjunto de datos tipo tabla, con 240 estrellas y 7 características para cada una de estas, las cuales son:
+	* Temperatura superficial de la estrella (K).
+	* Luminosidad escalada a la luminosidad del sol (L/Lo).
+	* Radio de la estrella escalado al radio del sol (R/Ro).
+	* Magnitud absoluta (Mv).
+	* Tipo de estrella (etiqueta de 0 a 5).
+	* Color de la estrella (variable discreta).
+	* Clase espectral.
 
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
