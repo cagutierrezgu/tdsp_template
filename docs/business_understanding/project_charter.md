@@ -10,6 +10,7 @@ Así mismo, cualquier profesor, investigador o estudiante que desde la academia 
 * What business problems are we trying to address?
 
 El objetivo del proyecto es determinar qué tipo de estrella se está estudiando a partir de las características más importantes de esta, así como encontrar posibles relaciones ocultas entre dichas características que aporten nuevos conocimientos en la astrofísica estelar. Los tipos de estrellas a clasificar son las siguientes:
+	
 	* 1. Enana marrón.
 	* 2. Enana roja.
 	* 3. Enana blanca
