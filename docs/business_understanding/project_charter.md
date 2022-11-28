@@ -9,7 +9,13 @@ Así mismo, cualquier profesor, investigador o estudiante que desde la academia 
 
 * What business problems are we trying to address?
 
-El objetivo del proyecto es determinar qué tipo de estrella se está estudiando a partir de las características más importantes de esta, así como encontrar posibles relaciones ocultas entre dichas características que aporten nuevos conocimientos en la astrofísica estelar.
+El objetivo del proyecto es determinar qué tipo de estrella se está estudiando a partir de las características más importantes de esta, así como encontrar posibles relaciones ocultas entre dichas características que aporten nuevos conocimientos en la astrofísica estelar. Los tipos de estrellas a clasificar son las siguientes:
+	* 1. Enana marrón.
+	* 2. Enana roja.
+	* 3. Enana blanca
+	* 4. Secuencia principal.
+	* 5. Supergigante.
+	* 6. Hipergigante.
 
 ## Scope
 * What data science solutions are we trying to build?
@@ -64,7 +70,7 @@ Debido a que no se dispone de valores de referencia anteriores, se usará la mé
 * Data
   * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.)
 
-Los datos serán extraídos de la página web de Kaggle, donde se encuentra un archivo .csv con mediciones realizadas observacionalmente (datos en bruto).
+Los datos serán extraídos de la página web de Kaggle, donde se encuentra un archivo .csv comprimido en otro archivo de tipo .zip con mediciones realizadas observacionalmente (datos en bruto). Los datos pueden descargarse de la ruta [https://www.kaggle.com/datasets/deepu1109/star-dataset](https://www.kaggle.com/datasets/deepu1109/star-dataset)
 
 * Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
 
