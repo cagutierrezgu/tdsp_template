@@ -1,8 +1,6 @@
 # Data Dictionary
 
-In this document you must describe the tables, collections or files that you are using in the project. You can describe each database and provide UML diagrams for a better design description.
-
-# Database Name 1
+# Database Stars data
 
 Los datos a usar para este proyecto consisten en un único conjunto en forma de archivo .csv, conformado por 240 filas y 7 columnas, representando 240 estrellas y 7 de sus características principales. Los datos fueron obtenidos de multiples observaciones astrofísicas y algunas cantidades fueron calculadas siguiendo leyes físicas como sigue:
 
