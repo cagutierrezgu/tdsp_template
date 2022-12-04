@@ -20,19 +20,9 @@ A continuación se presenta la extracción de datos realizada y la manipulación
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| X_train.csv | [Stars.csv](data_dictionary.md) | [data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [X_train.csv Report](data_summary.md)|
-| X_test.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [X_test.csv Report](data_summary.md)|
-| y_train.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [y_train.csv Report](data_summary.md)|
-| y_test.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [y_test.csv Report](data_summary.md)|
+| X_train.csv | [Stars.csv](data_dictionary.md) | [data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_exploring.ipynb) | [X_train.csv Report](data_summary.md)|
+| X_test.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_exploring.ipynb) | [X_test.csv Report](data_summary.md)|
+| y_train.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_exploring.ipynb) | [y_train.csv Report](data_summary.md)|
+| y_test.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_exploring.ipynb) | [y_test.csv Report](data_summary.md)|
 
-* X_train, X_test, y_train and y_test summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
-
-## Feature Sets
-
-| Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
-| ---:| ---: | ---: | ---: | 
-| Feature Set 1 | [Dataset1](link/to/dataset1/report), [Processed Dataset2](link/to/dataset2/report) | [R_Script2.R](link/to/R/script/file/in/Code) | [Feature Set1 Report](link/to/report1)|
-| Feature Set 2 | [Processed Dataset2](link/to/dataset2/report) |[SQL_Script2.sql](link/to/sql/script/file/in/Code) | [Feature Set2 Report](link/to/report2)|
-
-* Feature Set1 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set1 Report.>
-* Feature Set2 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set2 Report.> 
+* X_train, X_test, y_train and y_test summary. No hubo imputación ni eliminación de datos como consecuencia de datos faltantes, ya que no los había. En lugar de esto, se corrigieron los colores de las estrellas porque habían mismos colores escritos de maneras diferentes. Además, se usó la técnica de 'one hot encoding' para las variables categóricas 'Star color' y 'Spectral class' para ser consideradas en los modelos de aprendizaje posteriores de igual manera que las variables numéricas originales. Por último, los datos fueron separados en características y variable objetivo, así como en conjuntos de entrenamiento y prueba.
