@@ -20,10 +20,10 @@ A continuación se presenta la extracción de datos realizada y la manipulación
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| X_train.csv | [Stars.csv](link/to/dataset1/report) | [data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [X_train.csv Report](data_summary.md)|
-| X_test.csv | [Stars.csv](link/to/dataset2/report) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [X_test.csv Report](data_summary.md)|
-| y_train.csv | [Stars.csv](link/to/dataset2/report) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [y_train.csv Report](data_summary.md)|
-| y_test.csv | [Stars.csv](link/to/dataset2/report) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [y_test.csv Report](data_summary.md)|
+| X_train.csv | [Stars.csv](data_dictionary.md) | [data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [X_train.csv Report](data_summary.md)|
+| X_test.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [X_test.csv Report](data_summary.md)|
+| y_train.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [y_train.csv Report](data_summary.md)|
+| y_test.csv | [Stars.csv](data_dictionary.md) |[data_exploring.ipynb](https://github.com/cagutierrezgu/tdsp_template/blob/aa9bda826f1b09c181274744cc697ffd9b036ff9/scripts/data_loading.ipynb) | [y_test.csv Report](data_summary.md)|
 
 * X_train, X_test, y_train and y_test summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
 
