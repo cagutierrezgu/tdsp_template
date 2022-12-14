@@ -56,14 +56,26 @@ Así mismo, estos resultados se vieron gráficamente en una matriz de confusión
 
 * Variable Importance (significance)
 
+Con los datos dispuestos, habría sido posible implementar un algoritmo de reducción de dimensionalidad, tales como `PCA` o `t-SNE`. Sin embargo, no se hizo de esta manera, dejando intactas las variables originales, únicamente con normalización. De esta manera, no hubo preferencia de una variable sobre alguna otra, además no había de antemano mayor importancia de alguna variable en específico.
+
 * Insight Derived from the Model
+
+El modelo construido no da información adicional o novedosa respecto al campo de estudio de los datos, lo más relevante es haber encontrado menor capacidad de predicción para las estrellas tipo '3' o de la 'secuencia principal', aún así no son cifras escandalosas que le quiten credibilidad a este modelo.
 
 ## Conclusion and Discussions for Next Steps
 
 * Conclusion on Feasibility Assessment of the Machine Learning Task
 
+Según los resultados obtenidos para el conjunto de prueba con el modelo entrenado, puede afirmarse que el modelo funcionaría como una buena herramienta para predecir el tipo de una estrella conociendo su temperatura, luminosidad, radio y magnitud absoluta. Es por esto estaría listo para ser desplegado y usado por la comunidad científica o cualquier interesado, al tener menos del 2% de error.
+
 * Discussion on Overfitting (If Applicable)
+
+Dichos resultados tan elevadamente altos para los scores de las métricas con las que fue evaluado el modelo podrían indicar un posible sobreajuste de los datos, lo cual pudo deberse a la cantidad de datos de los que se disponía. Este podría mejorarse al incluir una mayor cantidad de datos y reentrenando el modelo ya analizado.
 
 * What other Features Can Be Generated from the Current Data
 
+El modelo implementado consideró únicamente las variables de tipo numéricas que contenía el dataframe usado; sin embargo, existían dos características más de tipo categóricas y texto. Por lo tanto, a dichas variables podrían aplicársele técnicas como `one hot encoding`, de tal manera que puedan incluirse en el modelo construido.
+
 * What other Relevant Data Sources Are Available to Help the Modeling
+
+Respecto a la posible proveniencia de más datos para mejorar el modelo actual, existen diferentes fuentes. Desde páginas web de organizaciones como la NASA, la Agencia Espacial Europea, entre otras, hasta observaciones realizadas directamente en un lugar adecuado, como un observatorio astronómico.
