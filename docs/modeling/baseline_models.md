@@ -1,18 +1,16 @@
 # Baseline Model Report
 
-_Baseline model is the the model a data scientist would train and evaluate quickly after he/she has the first (preliminary) feature set ready for the machine learning modeling. Through building the baseline model, the data scientist can have a quick assessment of the feasibility of the machine learning task.
-
 ## Analytic Approach
 * What is target definition
 
 En el modelo desarrollado se fijó una única variable objetivo, a saber la variable relacionada cone el tipo de la estrella. Dicha variable objetivo o de salida, se trata de un valor entero de 0 a 5, que como ya se ha discutido en documentos anteriores tiene como significado:
 
-	* 1. Enana marrón.
-	* 2. Enana roja.
-	* 3. Enana blanca
-	* 4. Secuencia principal.
-	* 5. Supergigante.
-	* 6. Hipergigante.
+	* 0. Enana marrón.
+	* 1. Enana roja.
+	* 2. Enana blanca
+	* 3. Secuencia principal.
+	* 4. Supergigante.
+	* 5. Hipergigante.
 
 * What are inputs (description)
 
@@ -43,8 +41,16 @@ A continuación se muestra una imagen del árbol de decisión obtenido con estos
 ![alt text](tree.png)
 
 ## Results (Model Performance)
+
 * ROC/Lift charts, AUC, R^2, MAPE as appropriate
-* Performance graphs for parameters sweeps if applicable
+
+Para evaluar y probar la capacidad de predicción del modelo entrenado, se pasó a traves de un `classification report` para conocer su score en diferentes métricas para conjuntos de testeo. Estos fueron los resultados:
+
+![alt text](report.png)
+
+Así mismo, estos resultados se vieron gráficamente en una matriz de confusión para ver la capacidad de predicción en cada uno de los tipos de estrella:
+
+![alt text](confusion.png)
 
 ## Model Understanding
 
