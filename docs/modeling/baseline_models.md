@@ -1,25 +1,46 @@
 # Baseline Model Report
 
-_Baseline model is the the model a data scientist would train and evaluate quickly after he/she has the first (preliminary) feature set ready for the machine learning modeling. Through building the baseline model, the data scientist can have a quick assessment of the feasibility of the machine learning task._
-
-> If using the Automated Modeling and Reporting tool, most of the sections below will be generated automatically from this tool. 
+_Baseline model is the the model a data scientist would train and evaluate quickly after he/she has the first (preliminary) feature set ready for the machine learning modeling. Through building the baseline model, the data scientist can have a quick assessment of the feasibility of the machine learning task.
 
 ## Analytic Approach
 * What is target definition
+
+En el modelo desarrollado se fijó una única variable objetivo, a saber la variable relacionada cone el tipo de la estrella. Dicha variable objetivo o de salida, se trata de un valor entero de 0 a 5, que como ya se ha discutido en documentos anteriores tiene como significado:
+
+	* 1. Enana marrón.
+	* 2. Enana roja.
+	* 3. Enana blanca
+	* 4. Secuencia principal.
+	* 5. Supergigante.
+	* 6. Hipergigante.
+
 * What are inputs (description)
+
+Para realizar una correcta predicción de la variable anteriormente discutida, se tuvo en cuenta la dependencia de la misma en características físicas de la estrella en cuestión. Es por esto que se escogieron las siguientes variables físicas disponibles en el conjunto de datos a estudiar:
+
+	* Temperatura.
+	* Luminosidad.
+	* Radio.
+	* Magnitud Absoluta.
+
 * What kind of model was built?
+
+Para obtener resultados de buena calidad para usarse y realizar posteriores predicciones, así como hacer una rápida implementación y entrenamiento del modelo, se usó un modelo clásico de árbol de desición. Las entradas de dicho modelo fueron las 4 características físicas ya mencionadas, y su salida es un número entero que indica el tipo de la estrella predicha.
 
 ## Model Description
 
 * Models and Parameters
 
-	* Description or images of data flow graph
-  		* if AzureML, link to:
-    		* Training experiment
-    		* Scoring workflow
-	* What learner(s) were used?
-	* Learner hyper-parameters
+Como fue mencionado más atrás, se implementó un modelo de aprendizaje automático basado en árboles de decisión, al cual se le realizó una búsqueda de los mejores hiperparámetros para mejorar las predicciones obtenidas sobre un conjunto de validación. Los hiperparámetros trabajados fueron los siguientes:
 
+	* Criterio de partición del árbol.
+	* Profundidad del árbol.
+  	
+Del estudio de los mejores hiperparámetros para el conjunto de datos entrenado se obtuvo que los mejores resultados según el score del modelo en un conjunto de validación era usando el criterio "entropy" para particionar el árbol, y este debía tener una profundidad igual a 5.
+
+A continuación se muestra una imagen del árbol de decisión obtenido con estos hiperparámetros:
+
+![alt text](tree.png)
 
 ## Results (Model Performance)
 * ROC/Lift charts, AUC, R^2, MAPE as appropriate
