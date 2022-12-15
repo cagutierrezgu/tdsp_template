@@ -34,7 +34,7 @@ Los datos usados en este proyecto provienen de la página web de [kaggle](https:
 
 A continuación se muestran algunos de los datos que se usan en el modelo en un dataframe de Pandas:
 
-![alt text](images/tree.png)
+![alt text](images/datos.png)
 
 * Stats (counts)
 
