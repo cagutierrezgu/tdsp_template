@@ -101,7 +101,7 @@ plt.xticks(fontsize = 14)
 plt.yticks(fontsize = 14)
 ax = ax.set_xticklabels(ax.get_xticklabels(), rotation = 90)
 
-"""Para solucionar lo anterior, definimos una función que cambie todos los colores 'repetidos' por uno solo. Además, realizamos one hot encoding para estas variables categóricas, se realiza la partición de los datos en entrenamiento y prueba y se hace un debido reescalamiento de los mismos"""
+"""Debido a lo anterior, una posible solución consistiría en definir una función que cambie todos los colores 'repetidos' por uno solo, para posteriormente hacer uso de one hot encoding para estas variables categóricas. Sin embargo, por mayor simplicidad en el modelo a construir, se realizará la separación entre las variables del modelo y la variable objetivo, así como se particionan los datos en entrenamiento y prueba y se hace un debido reescalamiento de los mismos"""
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -109,23 +109,6 @@ from sklearn.preprocessing import StandardScaler
 def preprocess(df):
     df = df.copy()
     
-    # Arreglo de colores
-    color_mapping = {
-        'Blue ': 'Blue',
-        'Blue white': 'Blue White',
-        'Blue-white': 'Blue White',
-        'Blue white ': 'Blue White',
-        'Blue-White': 'Blue White',
-        'white': 'White',
-        'yellow-white': 'Yellowish White',
-        'White-Yellow': 'Yellowish White',
-        'yellowish': 'Yellowish'
-    }
-    df['Star color'] = df['Star color'].replace(color_mapping)
-    
-    # One-hot encoding
-    #df = pd.concat([df, pd.get_dummies(df['Star color'], prefix='Color')], axis=1)
-    #df = pd.concat([df, pd.get_dummies(df['Spectral Class'], prefix='Class')], axis=1)
     df = df.drop(['Star color', 'Spectral Class'], axis=1)
     
     # Separación de variables
