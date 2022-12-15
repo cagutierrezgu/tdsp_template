@@ -34,11 +34,11 @@ Como fue mencionado más atrás, se implementó un modelo de aprendizaje automá
 	* Criterio de partición del árbol.
 	* Profundidad del árbol.
   	
-Del estudio de los mejores hiperparámetros para el conjunto de datos entrenado se obtuvo que los mejores resultados según el score del modelo en un conjunto de validación era usando el criterio "entropy" para particionar el árbol, y este debía tener una profundidad igual a 5.
+Del estudio de los mejores hiperparámetros para el conjunto de datos entrenado se obtuvo que los mejores resultados según el score del modelo en un conjunto de validación era usando el criterio "entropy" para particionar el árbol, y este debía tener una profundidad igual a 3.
 
 A continuación se muestra una imagen del árbol de decisión obtenido con estos hiperparámetros:
 
-![alt text](tree.png)
+![alt text](images/tree.png)
 
 ## Results (Model Performance)
 
@@ -46,11 +46,11 @@ A continuación se muestra una imagen del árbol de decisión obtenido con estos
 
 Para evaluar y probar la capacidad de predicción del modelo entrenado, se pasó a traves de un `classification report` para conocer su score en diferentes métricas para conjuntos de testeo. Estos fueron los resultados:
 
-![alt text](report.png)
+![alt text](images/report.png)
 
 Así mismo, estos resultados se vieron gráficamente en una matriz de confusión para ver la capacidad de predicción en cada uno de los tipos de estrella:
 
-![alt text](confusion.png)
+![alt text](images/confusion.png)
 
 ## Model Understanding
 

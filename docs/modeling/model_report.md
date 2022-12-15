@@ -25,21 +25,43 @@ Para realizar una correcta predicción de la variable anteriormente discutida, s
 
 Para obtener resultados de buena calidad para usarse y realizar posteriores predicciones, así como hacer una rápida implementación y entrenamiento del modelo, se usó un modelo clásico de árbol de desición. Las entradas de dicho modelo fueron las 4 características físicas ya mencionadas, y su salida es un número entero que indica el tipo de la estrella predicha.
 
-
-## Solution Description
-* Simple solution architecture (Data sources, solution components, data flow)
-* What is output?
-
 ## Data
 * Source
+
+Los datos usados en este proyecto provienen de la página web de [kaggle](https://www.kaggle.com/datasets/deepu1109/star-dataset) y consisten en un único conjunto en forma de archivo .csv, conformado por 240 filas y 7 columnas, representando 240 estrellas y 7 de sus características principales.
+
 * Data Schema
-* Sampling
-* Selection (dates, segments)
+
+A continuación se muestran algunos de los datos que se usan en el modelo en un dataframe de Pandas:
+
+![alt text](images/tree.png)
+
 * Stats (counts)
 
+Respecto a la distribución de estos datos según la variable objetivo del modelo, que es una variable categórica que toma 6 valores posibles, se hizo un conteo de los datos que se disponían según esta característica como se muestra a continuación:
+
+![alt text](images/distribution.png)
+
+Mostrando que existe una cantidad balanceada de estrellas de cada tipo para entrenar un modelo que genere predicciones fiables.
+
 ## Features
-* List of raw and derived features 
+* List of raw and derived features
+
+Las características del archivo original que se usó en el modelo son cada una de las columnas de dicho dataframe y que ya han sido discutidas en otros documentos:
+
+	* Temperatura.
+	* Luminosidad.
+	* Radio.
+	* Magnitud absoluta.
+	* Tipo de estrella.
+	* Color de la estrella.
+	* Clase espectral.
+
+A partir de las anteriores características no fueron extraídas otras más, ya que el modelo a entrenar no lo requería. Aún así, era posible hacer la conversión de las variables tipo texto de la clase espectral y el color de la estrella a variables numéricas para usarse en el modelo usado.
+
 * Importance ranking.
+
+Cada una de las variables mencionadas anteriormente fueron usadas sin dar privilegio o importancia de alguna sobre otra. Mayores detalles se mostrarán más adelante con el esquema del árbol del modelo.
 
 ## Algorithm
 
